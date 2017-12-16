@@ -1,5 +1,3 @@
-'use strict';
-
 var obj = {
   one: {
     fname: 'Vishal',
@@ -17,14 +15,14 @@ var obj = {
     fname: 'Vishal',
     lname: 'Chandola'
   }
+}
+
+const test = ({ one }) => {
+  return `Hi <strong>${one.fname} ${one.lname}</strong> how are you doing?`;
 };
 
-var test = function test(_ref) {
-  var one = _ref.one;
+$(function() {
+  $('header').html(test(obj))
+})
 
-  return 'Hi <strong>' + one.fname + ' ' + one.lname + '</strong> how are you doing?';
-};
 
-$(function () {
-  $('header').html(test(obj));
-});
