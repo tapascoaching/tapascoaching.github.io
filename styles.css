@@ -147,7 +147,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 /**************************************************************
@@ -255,26 +254,13 @@ p {
           Theme design
 **************************************************************/
 div.cover {
-  font-family: "Ubuntu";
-  font-weight: 300;
-  line-height: 150%;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  z-index: 999;
-  overflow: visible !important;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 60px;
 }
 div.cover div.logo img {
   max-width: 100%;
   height: auto;
 }
 div.cover div.logo {
-  position: absolute;
   margin: auto;
   color: #231f20;
   width: 50%;
@@ -336,7 +322,6 @@ div.cover div.logo img.logo:hover {
   }
 }
 .object {
-  position: absolute;
   animation: sway 2.4s infinite;
   animation-timing-function: ease-in-out;
   -webkit-transform-origin: top;
@@ -344,7 +329,7 @@ div.cover div.logo img.logo:hover {
   transform-origin: top;
   left: 0;
   right: 0;
-  height: 14%;
+  height: 50px;
   z-index: 999;
   text-transform: uppercase;
   top: 0;
@@ -434,10 +419,10 @@ header span {
 }
 
 header {
-  font-size: 20px;
   z-index: 2;
   color: #fff;
   padding: 15px;
+  font-size: 20px;
   position: relative;
   text-align: center;
   background: #0060d4;
@@ -459,12 +444,10 @@ header a:hover {
   border-bottom: 1px solid #fff;
 }
 
-
 @media only screen and (max-width: 640px) {
   header span {
     margin-bottom: 10px;
   }
-
   header a:hover,
   header a:active {
     border: none;
@@ -480,8 +463,10 @@ header a:hover {
   header .separator {
     display: none;
   }
+}
 
-  .object {
-    height: 30%;
-  }
+.object-container {
+  height: 160px;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
