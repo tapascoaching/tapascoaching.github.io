@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111447854-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111447854-1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tapas Coaching</title>
   <link rel="stylesheet" href="/public/css/styles.min.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111447854-1"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="public/js/main.min.js"></script>
 </head>
 <body>
-  <main>
-  <header>
+  <header class="siteHeader">
     <div class="orangeShape"></div>
     <div class="yellowShape"></div>
     <div class="blueShape"></div>
@@ -34,6 +41,7 @@
     </div>
   </header>
 
+  <main>
     <section class="banner">
       <div class="container">
         <h2>What is Tapas Coaching ?</h2>
@@ -108,7 +116,7 @@
                 </ul>
               </div>
             </div>
-            <div class="followUs">
+            <div class="socialConnect">
               <span>
                 <a href="javascript:void(0)">
                   <img src="public/images/facebook.jpg" alt="">
@@ -128,12 +136,5 @@
       </div>
     </footer>
   </main>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-111447854-1');
-  </script>
 </body>
 </html>

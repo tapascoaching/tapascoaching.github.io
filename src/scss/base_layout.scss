@@ -3,6 +3,10 @@ body {
   font-family: $defaultFont;
 }
 
+main {
+  margin-top: 120px;
+}
+
 .container {
   width: $container;
   margin: 0 auto;

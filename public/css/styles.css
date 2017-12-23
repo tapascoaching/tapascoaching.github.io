@@ -85,15 +85,20 @@ body {
   background: #fff;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
+main {
+  margin-top: 120px; }
+
 .container {
   width: 90%;
   margin: 0 auto; }
 
-header {
-  background: #fff;
+.siteHeader {
+  top: 0;
+  z-index: 9;
+  width: 100%;
   height: 120px;
-  position: relative; }
-  header .orangeShape {
+  position: fixed; }
+  .siteHeader .orangeShape {
     background: #f8a436;
     height: 48px;
     position: absolute;
@@ -101,7 +106,7 @@ header {
     transform: rotate(-3deg);
     margin-left: -5%;
     bottom: 37px; }
-  header .yellowShape {
+  .siteHeader .yellowShape {
     background: #f4b509;
     height: 37px;
     position: absolute;
@@ -109,7 +114,7 @@ header {
     transform: rotate(-3deg);
     margin-left: -5%;
     bottom: 17px; }
-  header .blueShape {
+  .siteHeader .blueShape {
     background: #242d38;
     height: 120px;
     position: absolute;
@@ -117,54 +122,58 @@ header {
     transform: rotate(2deg);
     margin-left: -5%;
     top: -24px; }
-  header .container {
+  .siteHeader .container {
     position: relative; }
-    header .container .logo {
+    .siteHeader .container .logo {
       position: absolute;
       padding: 0px 5px;
       top: 0px;
       left: 0px;
       background: #fff; }
-      header .container .logo a {
+      .siteHeader .container .logo a {
         display: block; }
-        header .container .logo a:focus {
+        .siteHeader .container .logo a:focus {
           outline: none; }
-        header .container .logo a img {
+        .siteHeader .container .logo a img {
           width: 155px;
           height: auto; }
-    header .container nav {
+    .siteHeader .container nav {
       float: right; }
-      header .container nav ul li {
+      .siteHeader .container nav ul li {
         list-style: none;
         display: inline-block;
         padding: 35px 25px; }
-        header .container nav ul li a {
+        .siteHeader .container nav ul li a {
           text-decoration: none;
           color: #fff;
           text-transform: uppercase;
           font-size: 14px;
           font-weight: bold;
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-          position: relative; }
-          header .container nav ul li a:after {
-            content: '';
-            position: absolute;
+          position: relative;
+          -webkit-transition: all 0.4s, -webkit-transform 0.4s;
+          transition: all 0.4s, transform 0.4s; }
+          .siteHeader .container nav ul li a:after {
             left: 0;
-            display: inline-block;
+            content: '';
             height: 1em;
             width: 100%;
-            border-bottom: 1px solid;
-            margin-top: 10px;
             opacity: 0;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
+            margin-top: 7px;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 1px solid;
+            -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+            transition: opacity 0.2s, transform 0.2s;
             -webkit-transform: scale(0, 1);
             transform: scale(0, 1); }
-          header .container nav ul li a:hover:after {
-            opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1); }
-          header .container nav ul li a:focus {
+          .siteHeader .container nav ul li a:hover {
+            color: #ffb802; }
+            .siteHeader .container nav ul li a:hover:after {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1); }
+          .siteHeader .container nav ul li a:focus {
             outline: none; }
 
 main {
@@ -315,7 +324,7 @@ footer {
               height: 2px;
               display: block;
               position: absolute;
-              bottom: -8px;
+              bottom: -5px;
               background: #0061d4;
               left: 0px; }
           footer .footerInnerBox .footerTop .weOffer .cources .courcesList {
@@ -345,7 +354,7 @@ footer {
               height: 2px;
               display: block;
               position: absolute;
-              bottom: -8px;
+              bottom: -5px;
               background: #0061d4;
               left: 0px; }
           footer .footerInnerBox .footerTop .weOffer .studentsPortal li {
@@ -355,15 +364,15 @@ footer {
               text-decoration: none;
               border-bottom: 1px solid #666666;
               text-transform: uppercase; }
-      footer .footerInnerBox .footerTop .followUs {
+      footer .footerInnerBox .footerTop .socialConnect {
         width: 25%;
         display: inline-block;
         text-align: right; }
-        footer .footerInnerBox .footerTop .followUs span {
+        footer .footerInnerBox .footerTop .socialConnect span {
           width: 48px;
           height: 48px;
           display: inline-block; }
-          footer .footerInnerBox .footerTop .followUs span a {
+          footer .footerInnerBox .footerTop .socialConnect span a {
             display: block; }
   footer .footerBottom {
     padding: 10px;

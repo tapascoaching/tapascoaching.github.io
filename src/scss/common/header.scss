@@ -1,8 +1,10 @@
-header {
-  background: #fff;
+.siteHeader {
+  top: 0;
+  z-index: 9;
+  width: 100%;
   height: 120px;
-  position: relative;
-  .orangeShape{
+  position: fixed;
+  .orangeShape {
     background: $headerOrangeShape;
     height: 48px;
     position: absolute;
@@ -12,7 +14,7 @@ header {
     bottom: 37px;
   }
 
-  .yellowShape{
+  .yellowShape {
     background: $headerYellowShape;
     height: 37px;
     position: absolute;
@@ -22,7 +24,7 @@ header {
     bottom: 17px;
   }
 
-  .blueShape{
+  .blueShape {
     background: $headerBlueShape;
     height: 120px;
     position: absolute;
@@ -31,7 +33,7 @@ header {
     margin-left: -5%;
     top: -24px;
   }
-  .container{
+  .container {
     position: relative;
     .logo {
       position: absolute;
@@ -41,10 +43,10 @@ header {
       background: $logoBackground;
       a {
         display: block;
-        &:focus{
+        &:focus {
           outline: none;
         }
-        img{
+        img {
           width: 155px;
           height: auto;
         }
@@ -65,28 +67,32 @@ header {
             font-weight: $fontBold;
             font-family: $defaultFont;
             position: relative;
-            &:after{
-              content: '';
-              position: absolute;
+            -webkit-transition: all 0.4s, -webkit-transform 0.4s;
+            transition: all 0.4s, transform 0.4s;
+            &:after {
               left: 0;
-              display: inline-block;
+              content: '';
               height: 1em;
               width: 100%;
-              border-bottom: 1px solid;
-              margin-top: 10px;
               opacity: 0;
-              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-              transition: opacity 0.35s, transform 0.35s;
+              margin-top: 7px;
+              position: absolute;
+              display: inline-block;
+              border-bottom: 1px solid;
+              -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+              transition: opacity 0.2s, transform 0.2s;
               -webkit-transform: scale(0,1);
               transform: scale(0,1);
             }
-
-            &:hover:after {
-              opacity: 1;
-              -webkit-transform: scale(1);
-              transform: scale(1);
+            &:hover {
+              color: #ffb802;
+              &:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+              }
             }
-            &:focus{
+            &:focus {
               outline: none;
             }
           }
