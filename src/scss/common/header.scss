@@ -1,52 +1,94 @@
 header {
-  background: $headerBackground;
-  .logo {
-    display: $displayInline;
-    padding: $basePadding;
-    background: $backgound;
-    a {
-      display: block;
-      img{
-        width: 155px;
-        height: auto;
+  background: #fff;
+  height: 120px;
+  position: relative;
+  .orangeShape{
+    background: $headerOrangeShape;
+    height: 48px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(-3deg);
+    margin-left: -5%;
+    bottom: 37px;
+  }
+
+  .yellowShape{
+    background: $headerYellowShape;
+    height: 37px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(-3deg);
+    margin-left: -5%;
+    bottom: 17px;
+  }
+
+  .blueShape{
+    background: $headerBlueShape;
+    height: 120px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(2deg);
+    margin-left: -5%;
+    top: -24px;
+  }
+  .container{
+    position: relative;
+    .logo {
+      position: absolute;
+      padding: 0px 5px;
+      top: 0px;
+      left: 0px;
+      background: $logoBackground;
+      a {
+        display: block;
+        &:focus{
+          outline: none;
+        }
+        img{
+          width: 155px;
+          height: auto;
+        }
       }
     }
-  }
-  nav {
-    float: $floatRight;
-    ul {
-      li {
-        list-style: none;
-        display: $displayInline;
-        padding: $basePadding;
-        a {
-          text-decoration: none;
-          color: $baseColor;
-          text-transform: $textTransform;
-          font-size: $baseFont;
-          font-weight: $fontWeight;
-          font-family: $defaultFont;
-          position: $relative;
-          &:after{
-            content: '';
-            position: $absolute;
-            left: 0;
-            display: $displayInline;
-            height: 1em;
-            width: 100%;
-            border-bottom: 1px solid;
-            margin-top: 10px;
-            opacity: 0;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: scale(0,1);
-            transform: scale(0,1);
-          }
+    nav {
+      float: right;
+      ul {
+        li {
+          list-style: none;
+          display: inline-block;
+          padding: 35px 25px;
+          a {
+            text-decoration: none;
+            color: $baseColor;
+            text-transform: uppercase;
+            font-size: $baseFont;
+            font-weight: $fontBold;
+            font-family: $defaultFont;
+            position: relative;
+            &:after{
+              content: '';
+              position: absolute;
+              left: 0;
+              display: inline-block;
+              height: 1em;
+              width: 100%;
+              border-bottom: 1px solid;
+              margin-top: 10px;
+              opacity: 0;
+              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+              transition: opacity 0.35s, transform 0.35s;
+              -webkit-transform: scale(0,1);
+              transform: scale(0,1);
+            }
 
-          &:hover:after {
-            opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            &:hover:after {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+            &:focus{
+              outline: none;
+            }
           }
         }
       }

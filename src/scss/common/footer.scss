@@ -2,7 +2,7 @@ footer{
   background: #f6f6f6;
   padding-top: 20px;
   font-family: $defaultFont;
-  position: $relative;
+  position: relative;
   &:before{
     transform: matrix(28,-1,7,4,898,-76);
     display: block;
@@ -10,73 +10,73 @@ footer{
     background: #f6f6f6;
     padding: 0px;
     z-index: -1;
-    position: $absolute;
+    position: absolute;
     height: 20px;
     width: 100%;
   }
   .footerInnerBox{
-    padding-left: 60px;
+    padding-left: 10.2em;
     font-size: 12px;
     .footerTop{
       margin-bottom: 40px;
       .weOffer{
         width: 74%;
-        display: $displayInline;
+        display: inline-block;
         box-sizing: border-box;
-        vertical-align: $top;
+        vertical-align: top;
         .cources{
-          display: $displayInline;
+          display: inline-block;
           width: 49%;
           box-sizing: border-box;
           h5{
             font-size: 13px;
             color: #000000;
-            text-transform: $textTransform;
+            text-transform: uppercase;
             margin-bottom: 30px;
-            font-weight: bold;
+            font-weight: $fontBold;
             position: relative;
             &:after{
               content: "";
               width: 128px;
               height: 2px;
               display: block;
-              position: $absolute;
+              position: absolute;
               bottom: -8px;
               background: #0061d4;
               left: 0px;
             }
           }
           .courcesList{
-            width: 49%;
+            width: 125px;
             box-sizing: border-box;
-            display: $displayInline;
+            display: inline-block;
             li{
               margin-bottom: 10px;
               a{
                 color: #666666;
                 text-decoration: none;
                 border-bottom: 1px solid #666666;
-                text-transform: $textTransform;
+                text-transform: uppercase;
               }
             }
           }
         }
         .studentsPortal{
-          display: $displayInline;
+          display: inline-block;
           vertical-align:top;
           h5{
             font-size: 13px;
             color: #000000;
-            text-transform: $textTransform;
+            text-transform: uppercase;
             margin-bottom: 30px;
-            font-weight: bold;
-            position: $relative;
+            font-weight: $fontBold;
+            position: relative;
             &:after{
               content: "";
               width: 108px;
               height: 2px;
               display: block;
-              position: $absolute;
+              position: absolute;
               bottom: -8px;
               background: #0061d4;
               left: 0px;
@@ -88,19 +88,19 @@ footer{
               color: #666666;
               text-decoration: none;
               border-bottom: 1px solid #666666;
-              text-transform: $textTransform;
+              text-transform: uppercase;
             }
           }
         }
       }
       .followUs{
         width: 25%;
-        display: $displayInline;
-        text-align: $right;
+        display: inline-block;
+        text-align: right;
         span{
           width: 48px;
           height: 48px;
-          display: $displayInline;
+          display: inline-block;
           a{
             display: block;
           }
@@ -110,9 +110,9 @@ footer{
   }
   .footerBottom{
     padding: 10px;
-    border-top: 2px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
     p{
-      padding-left: 60px;
+      padding-left: 7em;
     }
   }
 }

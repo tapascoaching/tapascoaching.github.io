@@ -3,13 +3,13 @@
   .contactInfo{
     font-family: $defaultFont;
     .bookIcon{
-      display: $displayInline;
+      display: inline-block;
       margin-right: 10px;
-      vertical-align: $top;
+      vertical-align: top;
       p{
         font-size: 18px;
         color: #242d38;
-        text-align: $right;
+        text-align: right;
         margin-bottom: 10px;
       }
       img{
@@ -18,8 +18,8 @@
       }
     }
     .contactDetails{
-      display: $displayInline;
-      vertical-align: $top;
+      display: inline-block;
+      vertical-align: top;
       p{
         margin-bottom: 10px;
         a{
@@ -29,6 +29,10 @@
         &:nth-child(3){
           a{
             color: #0061d4;
+            text-decoration: underline;
+            &:hover{
+              text-decoration: none;
+            }
           }
         }
       }

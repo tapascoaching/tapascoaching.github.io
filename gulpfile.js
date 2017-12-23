@@ -99,7 +99,10 @@ gulp.task('fonts', function() {
 // IMAGES TASK
 gulp.task('images', function() {
   return gulp.src(paths.images)
-    .pipe(imagemin())
+    .pipe(imagemin().on('error', function(err) {
+      console.error(err.message);
+      this.emit('end');
+    }))
     .pipe(gulp.dest('./public/images'))
     .pipe(browserSync.stream());
 });
