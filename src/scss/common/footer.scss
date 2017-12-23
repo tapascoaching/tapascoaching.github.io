@@ -1,0 +1,122 @@
+footer{
+  background: #f6f6f6;
+  padding-top: 20px;
+  font-family: $defaultFont;
+  position: $relative;
+  &:before{
+    transform: matrix(28,-1,7,4,898,-76);
+    display: block;
+    content: "";
+    background: #f6f6f6;
+    padding: 0px;
+    z-index: -1;
+    position: $absolute;
+    height: 20px;
+    width: 100%;
+  }
+  .footerInnerBox{
+    padding-left: 60px;
+    font-size: 12px;
+    .footerTop{
+      margin-bottom: 40px;
+      .weOffer{
+        width: 74%;
+        display: $displayInline;
+        box-sizing: border-box;
+        vertical-align: $top;
+        .cources{
+          display: $displayInline;
+          width: 49%;
+          box-sizing: border-box;
+          h5{
+            font-size: 13px;
+            color: #000000;
+            text-transform: $textTransform;
+            margin-bottom: 30px;
+            font-weight: bold;
+            position: relative;
+            &:after{
+              content: "";
+              width: 128px;
+              height: 2px;
+              display: block;
+              position: $absolute;
+              bottom: -8px;
+              background: #0061d4;
+              left: 0px;
+            }
+          }
+          .courcesList{
+            width: 49%;
+            box-sizing: border-box;
+            display: $displayInline;
+            li{
+              margin-bottom: 10px;
+              a{
+                color: #666666;
+                text-decoration: none;
+                border-bottom: 1px solid #666666;
+                text-transform: $textTransform;
+              }
+            }
+          }
+        }
+        .studentsPortal{
+          display: $displayInline;
+          vertical-align:top;
+          h5{
+            font-size: 13px;
+            color: #000000;
+            text-transform: $textTransform;
+            margin-bottom: 30px;
+            font-weight: bold;
+            position: $relative;
+            &:after{
+              content: "";
+              width: 108px;
+              height: 2px;
+              display: block;
+              position: $absolute;
+              bottom: -8px;
+              background: #0061d4;
+              left: 0px;
+            }
+          }
+          li{
+            margin-bottom: 10px;
+            a{
+              color: #666666;
+              text-decoration: none;
+              border-bottom: 1px solid #666666;
+              text-transform: $textTransform;
+            }
+          }
+        }
+      }
+      .followUs{
+        width: 25%;
+        display: $displayInline;
+        text-align: $right;
+        span{
+          width: 48px;
+          height: 48px;
+          display: $displayInline;
+          a{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .footerBottom{
+    padding: 10px;
+    border-top: 2px solid #e3e3e3;
+    p{
+      padding-left: 60px;
+    }
+  }
+}
+
+
+
+

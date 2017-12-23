@@ -1,0 +1,37 @@
+.contactUs{
+  padding-bottom: 15px;
+  .contactInfo{
+    font-family: $defaultFont;
+    .bookIcon{
+      display: $displayInline;
+      margin-right: 10px;
+      vertical-align: $top;
+      p{
+        font-size: 18px;
+        color: #242d38;
+        text-align: $right;
+        margin-bottom: 10px;
+      }
+      img{
+        width: 110px;
+        height: auto;
+      }
+    }
+    .contactDetails{
+      display: $displayInline;
+      vertical-align: $top;
+      p{
+        margin-bottom: 10px;
+        a{
+          text-decoration: none;
+          color: #242d38;
+        }
+        &:nth-child(3){
+          a{
+            color: #0061d4;
+          }
+        }
+      }
+    }
+  }
+}

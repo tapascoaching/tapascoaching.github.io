@@ -16,10 +16,12 @@ var gulp = require('gulp'),
 var paths = {
   sass: 'src/scss/**/*.scss',
   html: '*.html',
-  images: 'public/images/**/*',
-  fonts: ['/public/fonts/*', 'src/fonts/*'],
+  images: ['./src/images/**/*', './public/images/*'],
+  fonts: ['./src/fonts/**/*', './public/fonts/*'],
   js: 'src/js/**/*.js'
 }
+
+
 
 // SASS TASK
 gulp.task('sass', function () {

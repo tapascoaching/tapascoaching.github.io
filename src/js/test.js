@@ -1,4 +1,4 @@
-var obj = {
+/*var obj = {
   one: {
     fname: 'Vishal',
     lname: 'Chandola'
@@ -26,3 +26,4 @@ $(function() {
 })
 
 
+*/

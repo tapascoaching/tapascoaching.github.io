@@ -2,3 +2,10 @@ body {
   background: $backgound;
   font-family: $defaultFont;
 }
+
+.container {
+  width: $container;
+  margin: 0 auto;
+}
+
+
