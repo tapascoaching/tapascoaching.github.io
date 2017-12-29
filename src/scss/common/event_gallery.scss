@@ -1,8 +1,9 @@
-.eventGallery{
+.eventGallery {
+  margin-top: 115px;
+  position: relative;
   padding: 10px 0px 30px;
   background: $eventBackground;
-  position: relative;
-  &:before{
+  &:before {
     content: '';
     position: absolute;
     top: -48px;
@@ -17,7 +18,7 @@
     width: 110%;
   }
 
-  &:after{
+  &:after {
     content: "";
     width: 100%;
     height: 60px;
@@ -30,29 +31,37 @@
     left: -5%;
     width: 110%;
   }
-
-  h1{
-    font-size: 36px;
-    font-weight: normal;
-    font-family: $themeFont;
-    margin-bottom: 40px;
-    color: #333333;
-    font-weight: bold;
-  }
-  p{
-    font-size: 22px;
-    font-weight: normal;
-    color: #6b6a6a;
-    margin-bottom: 40px;
-    line-height: 1.5;
-    font-family: $baseFont;
-    &:last-child{
-      margin-bottom: 0px;
-    }
-  }
-
-  .sliderContainer{
+  .sliderContainer {
     background: $sliderBackground;
   }
+  .sliderContent {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: #000;
+    padding: 10px 20px;
+    font-family: 'Century Gothic';
+    p {
+      font-weight: normal;
+      color: #97faf1;
+      font-size: 32px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-family: $baseFont;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      span {
+        font-size: 52pt;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+}
 
+#owl-demo .owl-nav {
+  top: 18px;
+  left: 44%;
 }

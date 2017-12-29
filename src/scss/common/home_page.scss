@@ -1,0 +1,15 @@
+.about {
+  p {
+    font-size: 22px;
+    font-weight: $fontNormal;
+    color: #6b6a6a;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+}
+
+// carousel overwrite
+#owl-demo .owl-nav {
+  top: 18px;
+  left: 44%;
+}

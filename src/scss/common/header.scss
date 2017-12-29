@@ -4,97 +4,93 @@
   width: 100%;
   height: 120px;
   position: fixed;
+  .blueShape {
+    background: $headerBlueShape;
+    height: 118px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(3.5deg);
+    margin-left: -5%;
+    top: -38px;
+    z-index: 3;
+  }
   .orangeShape {
     background: $headerOrangeShape;
     height: 48px;
     position: absolute;
     width: 110%;
-    transform: rotate(-3deg);
+    transform: rotate(-.8deg);
     margin-left: -5%;
-    bottom: 37px;
+    bottom: 46px;
+    z-index: 2;
   }
-
   .yellowShape {
     background: $headerYellowShape;
-    height: 37px;
+    height: 160px;
     position: absolute;
     width: 110%;
     transform: rotate(-3deg);
     margin-left: -5%;
-    bottom: 17px;
+    bottom: 24px;
+    z-index: 1;
   }
 
-  .blueShape {
-    background: $headerBlueShape;
-    height: 120px;
-    position: absolute;
-    width: 110%;
-    transform: rotate(2deg);
-    margin-left: -5%;
-    top: -24px;
-  }
   .container {
+    z-index: 99;
     position: relative;
     .logo {
       position: absolute;
-      padding: 0px 5px;
+      padding: 20px;
       top: 0px;
       left: 0px;
       background: $logoBackground;
-      a {
-        display: block;
-        &:focus {
-          outline: none;
-        }
-        img {
-          width: 155px;
-          height: auto;
-        }
+      img {
+        width: 192px;
+        height: auto;
       }
     }
     nav {
       float: right;
-      ul {
-        li {
-          list-style: none;
-          display: inline-block;
-          padding: 35px 25px;
-          a {
-            text-decoration: none;
-            color: $baseColor;
-            text-transform: uppercase;
-            font-size: $baseFont;
-            font-weight: $fontBold;
-            font-family: $defaultFont;
-            position: relative;
-            -webkit-transition: all 0.4s, -webkit-transform 0.4s;
-            transition: all 0.4s, transform 0.4s;
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 35px 25px;
+        a {
+          text-decoration: none;
+          color: $baseColor;
+          text-transform: uppercase;
+          font-size: $baseFont;
+          font-weight: $fontBold;
+          font-family: $defaultFont;
+          position: relative;
+          letter-spacing: 1px;
+          -webkit-transition: all 0.4s, -webkit-transform 0.4s;
+          transition: all 0.4s, transform 0.4s;
+          &:after {
+            left: 0;
+            content: '';
+            height: 1em;
+            width: 100%;
+            opacity: 0;
+            margin-top: 7px;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 1px solid;
+            -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+            transition: opacity 0.2s, transform 0.2s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+          }
+          &:hover {
+            color: #ffb802;
             &:after {
-              left: 0;
-              content: '';
-              height: 1em;
-              width: 100%;
-              opacity: 0;
-              margin-top: 7px;
-              position: absolute;
-              display: inline-block;
-              border-bottom: 1px solid;
-              -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-              transition: opacity 0.2s, transform 0.2s;
-              -webkit-transform: scale(0,1);
-              transform: scale(0,1);
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
             }
-            &:hover {
-              color: #ffb802;
-              &:after {
-                opacity: 1;
-                -webkit-transform: scale(1);
-                transform: scale(1);
-              }
-            }
-            &:focus {
-              outline: none;
-            }
+          }
+          &:focus {
+            outline: none;
           }
         }
       }
