@@ -1,7 +1,7 @@
 .siteHeader {
   top: 0;
-  z-index: 9;
   width: 100%;
+  z-index: 999;
   height: 120px;
   position: fixed;
   .blueShape {
@@ -44,6 +44,7 @@
       top: 0px;
       left: 0px;
       background: $logoBackground;
+      z-index: 9;
       img {
         width: 192px;
         height: auto;

@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
+    htmlmin = require('gulp-htmlmin'),
     postcss = require('gulp-postcss'),
     imagemin = require('gulp-imagemin'),
     cleanCss = require('gulp-clean-css'),
@@ -15,13 +16,11 @@ var gulp = require('gulp'),
 // PATHS OBJECT
 var paths = {
   sass: 'src/scss/**/*.scss',
-  html: '*.html',
+  html: './src/*.html',
   images: ['./src/images/**/*', './public/images/*'],
   fonts: ['./src/fonts/**/*', './public/fonts/*'],
   js: 'src/js/**/*.js'
 }
-
-
 
 // SASS TASK
 gulp.task('sass', function () {
@@ -48,8 +47,18 @@ gulp.task('autoprefixer', function () {
 });
 
 // HTML TASK
-gulp.task('html', function() {
+// gulp.task('html', function() {
+//   return gulp.src(paths.html)
+//     .pipe(browserSync.stream());
+// });
+
+gulp.task('htmlMinify', function() {
   return gulp.src(paths.html)
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 });
 
@@ -73,22 +82,6 @@ gulp.task('es6', () => {
     .pipe(browserSync.stream());
 })
 
-// JS TASK
-// gulp.task('js', function() {
-//   return gulp.src('./src/js/**/*.js')
-//     .pipe(concat('main.js'))
-//     .pipe(gulp.dest('./public/js'))
-//     .pipe(uglify().on('error', function(uglify){
-//       console.error(uglify.message);
-//       this.emit('end');
-//     }))
-//     .pipe(rename({
-//       suffix: '.min'
-//     }))
-//     .pipe(gulp.dest('./public/js'))
-//     .pipe(browserSync.stream());
-// });
-
 // FONTS TASK
 gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
@@ -110,7 +103,7 @@ gulp.task('images', function() {
 // WATCH TASK
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.html, ['html']);
+  gulp.watch(paths.html, ['htmlMinify']);
   gulp.watch(paths.js, ['es6']);
   gulp.watch(paths.fonts, ['fonts']);
   gulp.watch(paths.images, ['images', 'clean']);
@@ -133,4 +126,4 @@ gulp.task('clean', function () {
 });
 
 // DEFAULT TASK
-gulp.task('default',['sass', 'html', 'es6', 'images', 'fonts', 'browser-sync', 'watch']);
+gulp.task('default',['sass', 'htmlMinify', 'es6', 'images', 'fonts', 'browser-sync', 'watch']);
