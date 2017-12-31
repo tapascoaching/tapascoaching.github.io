@@ -1,0 +1,132 @@
+footer {
+  padding-top: 20px;
+  font-family: $defaultFont;
+  position: relative;
+  &:before {
+    content: "";
+    z-index: -1;
+    width: 105%;
+    bottom: -40px;
+    height: 261px; /* temp */
+    // height: 390px;
+    display: block;
+    position: absolute;
+    background: #f6f6f6;
+    transform: rotate(-3.6deg);
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    top: -77px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    background: #e3e3e3;
+    transform: rotate(-3.6deg);
+    z-index: 9;
+  }
+  .footerInnerBox {
+    padding-left: 10.2em;
+    font-size: 12px;
+    .footerTop {
+      margin-bottom: 20px;
+      .weOffer {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        .cources {
+          display: inline-block;
+          width: 49%;
+          box-sizing: border-box;
+          h5 {
+            font-size: 13px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: $fontBold;
+            position: relative;
+            &:after {
+              content: "";
+              width: 128px;
+              height: 2px;
+              display: block;
+              position: absolute;
+              bottom: -5px;
+              background: #0061d4;
+              left: 0px;
+            }
+          }
+          .courcesList {
+            min-width: 140px;
+            box-sizing: border-box;
+            display: inline-block;
+            li {
+              margin-bottom: 15px;
+              letter-spacing: .8px;
+              a {
+                color: #666666;
+                text-decoration: none;
+                border-bottom: 1px solid #666666;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .studentsPortal {
+          display: inline-block;
+          vertical-align:top;
+          h5 {
+            font-size: 13px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: $fontBold;
+            position: relative;
+            &:after {
+              content: "";
+              width: 108px;
+              height: 2px;
+              display: block;
+              position: absolute;
+              bottom: -5px;
+              background: #0061d4;
+              left: 0px;
+            }
+          }
+          li {
+            margin-bottom: 10px;
+            a {
+              color: #666666;
+              text-decoration: none;
+              border-bottom: 1px solid #666666;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .socialConnect {
+        display: inline-block;
+        text-align: right;
+        a {
+          width: 48px;
+          height: 48px;
+          float: right;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  .copyrightInfo {
+    padding: 20px 0;
+    border-top: 1px solid #e3e3e3;
+    p {
+      padding-left: 7em;
+      font-size: 12px;
+      color: #868585;
+    }
+  }
+}
+
+
+
+

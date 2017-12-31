@@ -1,0 +1,30 @@
+body {
+  background: $bodyBackground;
+  font-family: $defaultFont;
+}
+
+main {
+  margin-top: 210px;
+}
+
+.container {
+  width: $container;
+  margin: 0 auto;
+}
+
+
+// headings
+h1 {
+  font-weight: $fontNormal;
+  font-family: $themeFont;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+h2 {
+  font-size: 43px;
+  font-weight: bold;
+  font-family: $themeFont;
+  margin-bottom: 40px;
+  color: #333333;
+}

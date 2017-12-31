@@ -1,0 +1,105 @@
+.siteHeader {
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: 120px;
+  position: fixed;
+  .blueShape {
+    background: $headerBlueShape;
+    height: 118px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(3.2deg);
+    margin-left: -5%;
+    top: -38px;
+    z-index: 3;
+  }
+  .orangeShape {
+    background: $headerOrangeShape;
+    height: 48px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(-.8deg);
+    margin-left: -5%;
+    bottom: 46px;
+    z-index: 2;
+  }
+  .yellowShape {
+    background: $headerYellowShape;
+    height: 160px;
+    position: absolute;
+    width: 110%;
+    transform: rotate(-3deg);
+    margin-left: -5%;
+    bottom: 24px;
+    z-index: 1;
+  }
+
+  .container {
+    z-index: 99;
+    position: relative;
+
+    // logo
+    .logo {
+      position: absolute;
+      padding: 20px;
+      top: 0px;
+      left: 0px;
+      background: $logoBackground;
+      z-index: 9;
+      img {
+        width: 192px;
+        height: auto;
+      }
+    }
+
+    // navigation
+    nav {
+      float: right;
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 35px 25px;
+        a {
+          text-decoration: none;
+          color: $baseColor;
+          text-transform: uppercase;
+          font-size: $baseFont;
+          font-weight: $fontBold;
+          font-family: $defaultFont;
+          position: relative;
+          letter-spacing: 1px;
+          -webkit-transition: all 0.4s, -webkit-transform 0.4s;
+          transition: all 0.4s, transform 0.4s;
+          &:after {
+            left: 0;
+            content: '';
+            height: 1em;
+            width: 100%;
+            opacity: 0;
+            margin-top: 7px;
+            position: absolute;
+            display: inline-block;
+            border-bottom: 1px solid;
+            -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+            transition: opacity 0.2s, transform 0.2s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+          }
+          &:hover {
+            color: #ffb802;
+            &:after {
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,42 @@
+.contactUs {
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 99;
+  .bookIcon {
+    margin-right: 22px;
+    vertical-align: top;
+    display: inline-block;
+    p {
+      color: #242d38;
+      font-size: 24px;
+      text-align: right;
+      margin-right: -18px;
+      margin-bottom: 10px;
+    }
+    img {
+      height: auto;
+    }
+  }
+  .contactDetails {
+    font-size: 24px;
+    vertical-align: top;
+    display: inline-block;
+    .email {
+      color: #0061d4;
+      font-size: 15px;
+      margin-top: 11px;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      a {
+        display: block;
+        color: #242d38;
+        margin-bottom: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}

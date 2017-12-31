@@ -1,0 +1,13 @@
+.about,
+.contactInfo {
+  p {
+    font-weight: $fontNormal;
+    color: #666;
+  }
+}
+
+// carousel overwrite
+#owl-demo .owl-nav {
+  top: 18px;
+  left: 44%;
+}
