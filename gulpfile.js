@@ -46,12 +46,6 @@ gulp.task('autoprefixer', function () {
     .pipe(gulp.dest('./public/css'));
 });
 
-// HTML TASK
-// gulp.task('html', function() {
-//   return gulp.src(paths.html)
-//     .pipe(browserSync.stream());
-// });
-
 gulp.task('htmlMinify', function() {
   return gulp.src(paths.html)
     .pipe(htmlmin({
@@ -121,7 +115,7 @@ gulp.task('browser-sync', function() {
 
 // clean task
 gulp.task('clean', function () {
-  return gulp.src('dist', {read: false})
+  return gulp.src('public', {read: false})
     .pipe(clean());
 });
 

@@ -1,12 +1,12 @@
 .eventGallery {
-  margin-top: 115px;
+  margin-top: 125px;
   position: relative;
-  padding: 10px 0px 30px;
+  padding: 0px 0px 30px;
   background: $eventBackground;
   &:before {
     content: '';
     position: absolute;
-    top: -48px;
+    top: -58px;
     right: 0;
     left: -5%;
     height: 100%;

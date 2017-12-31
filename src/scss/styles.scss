@@ -1,9 +1,15 @@
+// Vendor
+@import './owl_carousel';
+@import './owl_carousel_theme';
+
+// Custom Styles
 @import './reset';
 @import './variables';
 @import './base_layout';
 @import './common/header';
 @import './common/home_page';
-@import './common/event_gallery.scss';
-@import './common/location.scss';
-@import './common/contact_us.scss';
-@import './common/footer.scss';
+@import './common/event_gallery';
+@import './common/location';
+@import './common/contact_us';
+@import './common/footer';
+@import './common/contact_page';

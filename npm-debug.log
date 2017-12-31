@@ -1,35 +1,35 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/Cellar/node/6.7.0/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
-2 info using npm@3.10.7
-3 info using node@v6.7.0
+2 info using npm@3.10.9
+3 info using node@v6.9.2
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle TapasCoaching@1.0.0~prestart: TapasCoaching@1.0.0
 6 silly lifecycle TapasCoaching@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle TapasCoaching@1.0.0~start: TapasCoaching@1.0.0
 8 verbose lifecycle TapasCoaching@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle TapasCoaching@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/gulshankumar/workplace/tapas/website/tapascoaching.github.io/node_modules/.bin:/usr/local/Cellar/node/6.7.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-10 verbose lifecycle TapasCoaching@1.0.0~start: CWD: /Users/gulshankumar/workplace/tapas/website/tapascoaching.github.io
-11 silly lifecycle TapasCoaching@1.0.0~start: Args: [ '-c', 'gulp' ]
+9 verbose lifecycle TapasCoaching@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;E:\tapas\tapascoaching.github.io\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Ruby24-x64\bin;C:\Users\vishal\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin
+10 verbose lifecycle TapasCoaching@1.0.0~start: CWD: E:\tapas\tapascoaching.github.io
+11 silly lifecycle TapasCoaching@1.0.0~start: Args: [ '/d /s /c', 'gulp' ]
 12 silly lifecycle TapasCoaching@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle TapasCoaching@1.0.0~start: Failed to exec start script
 14 verbose stack Error: TapasCoaching@1.0.0 start: `gulp`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid TapasCoaching@1.0.0
-16 verbose cwd /Users/gulshankumar/workplace/tapas/website/tapascoaching.github.io
-17 error Darwin 16.7.0
-18 error argv "/usr/local/Cellar/node/6.7.0/bin/node" "/usr/local/bin/npm" "start"
-19 error node v6.7.0
-20 error npm  v3.10.7
+16 verbose cwd E:\tapas\tapascoaching.github.io
+17 error Windows_NT 6.1.7601
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v6.9.2
+20 error npm  v3.10.9
 21 error code ELIFECYCLE
 22 error TapasCoaching@1.0.0 start: `gulp`
 22 error Exit status 1
