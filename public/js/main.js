@@ -11,6 +11,14 @@ $(document).ready(function () {
     lazyLoad: true,
     baseClass: "owl-carousel"
   });
+
+  setTimeout(function () {
+    $('.popup, .overlay').fadeIn(800);
+  }, 2000);
+
+  $('.popup').on('click', function () {
+    $('.popup, .overlay').fadeOut();
+  });
 });
 'use strict';
 

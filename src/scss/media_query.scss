@@ -6,6 +6,11 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .popup {
+    left: 50%;
+    max-width: 600px;
+    margin-left: -300px;
+  }
   h1 {
     font-size: 36px;
   }
