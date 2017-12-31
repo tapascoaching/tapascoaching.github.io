@@ -2,6 +2,8 @@
 @import './owl_carousel';
 @import './owl_carousel_theme';
 
+// media queries
+
 // Custom Styles
 @import './reset';
 @import './variables';
@@ -13,3 +15,5 @@
 @import './common/contact_us';
 @import './common/footer';
 @import './common/contact_page';
+
+@import './media_query';

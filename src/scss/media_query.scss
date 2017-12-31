@@ -1,0 +1,197 @@
+// Extra small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  .about {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+  .about,
+  .contactInfo {
+    p {
+      font-size: 22px;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+    }
+  }
+  footer {
+    .footerInnerBox {
+      .footerTop {
+        .weOffer {
+          width: 74%;
+        }
+        .socialConnect {
+          width: 25%;
+          a {
+            overflow: hidden;
+            position: relative;
+            &:hover{
+              transform: rotate(-15deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    .bookIcon {
+      img {
+        width: 160px;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.99px) {
+  .contactInfo {
+    address {
+      display: block;
+      p {
+        line-height: 1.4em;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.99px) {
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .about,
+  .contactInfo {
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin-bottom: 16px;
+    }
+  }
+  .contactUs {
+    .bookIcon {
+      margin-right: 10px;
+      p {
+        font-size: 18px;
+        margin-right: -6px;
+      }
+      img {
+        width: 80px;
+      }
+    }
+    .contactDetails {
+      font-size: 18px;
+      .email {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .siteHeader {
+    .orangeShape {
+      bottom: 38px;
+    }
+    .container {
+      .logo {
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+  footer {
+    &:before {
+      bottom: -80px;
+    }
+    &:after {
+      top: -39px;
+    }
+  }
+  .locationMap {
+    padding-bottom: 40px;
+  }
+  main {
+    margin-top: 140px;
+  }
+  .eventGallery {
+    margin-top: 100px;
+    .sliderContent {
+      p {
+        font-size: 20px;
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .locationMap {
+    padding-top: 100px;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.99px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.99px) {
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 992px) {
+  #owl-demo {
+    .item {
+      figure {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 575.99px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.99px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.99px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.99px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+
+

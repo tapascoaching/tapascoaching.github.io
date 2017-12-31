@@ -341,7 +341,6 @@ main {
   margin: 0 auto; }
 
 h1 {
-  font-size: 36px;
   font-weight: normal;
   font-family: "Century Gothic";
   margin-bottom: 20px;
@@ -442,11 +441,8 @@ h2 {
 
 .about p,
 .contactInfo p {
-  font-size: 22px;
   font-weight: normal;
-  color: #6b6a6a;
-  margin-bottom: 20px;
-  line-height: 1.5; }
+  color: #666; }
 
 #owl-demo .owl-nav {
   top: 18px;
@@ -497,8 +493,7 @@ h2 {
       color: #97faf1;
       font-size: 32px;
       line-height: 1.5;
-      margin-bottom: 10px;
-      font-family: 14px; }
+      margin-bottom: 10px; }
       .eventGallery .sliderContent p:last-child {
         margin-bottom: 0px; }
       .eventGallery .sliderContent p span {
@@ -528,7 +523,6 @@ h2 {
       margin-right: -18px;
       margin-bottom: 10px; }
     .contactUs .bookIcon img {
-      width: 160px;
       height: auto; }
   .contactUs .contactDetails {
     font-size: 24px;
@@ -578,7 +572,6 @@ footer {
     footer .footerInnerBox .footerTop {
       margin-bottom: 20px; }
       footer .footerInnerBox .footerTop .weOffer {
-        width: 74%;
         display: inline-block;
         box-sizing: border-box;
         vertical-align: top; }
@@ -641,17 +634,13 @@ footer {
               border-bottom: 1px solid #666666;
               text-transform: uppercase; }
       footer .footerInnerBox .footerTop .socialConnect {
-        width: 25%;
         display: inline-block;
         text-align: right; }
         footer .footerInnerBox .footerTop .socialConnect a {
           width: 48px;
           height: 48px;
           float: right;
-          transition: all 0.3s ease-in-out; }
-          footer .footerInnerBox .footerTop .socialConnect a:hover {
-            margin-top: -5px;
-            transform: translate(0, -8); }
+          transition: all 0.2s ease-in-out; }
   footer .copyrightInfo {
     padding: 20px 0;
     border-top: 1px solid #e3e3e3; }
@@ -662,8 +651,93 @@ footer {
 
 .contactInfo .contactForm iframe {
   width: 100%;
-  height: 1800px;
+  height: 1635px;
   margin-bottom: 60px; }
 
 .contactInfo .locationMap {
   padding-top: 20px; }
+
+.contactInfo address {
+  display: none;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .contactInfo address p {
+    margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px; }
+  .about h1 {
+    margin-bottom: 40px; }
+  .about p,
+  .contactInfo p {
+    font-size: 22px;
+    line-height: 1.5em;
+    margin-bottom: 20px; }
+  footer .footerInnerBox .footerTop .weOffer {
+    width: 74%; }
+  footer .footerInnerBox .footerTop .socialConnect {
+    width: 25%; }
+    footer .footerInnerBox .footerTop .socialConnect a {
+      overflow: hidden;
+      position: relative; }
+      footer .footerInnerBox .footerTop .socialConnect a:hover {
+        transform: rotate(-15deg); }
+  .contactUs .bookIcon img {
+    width: 160px; } }
+
+@media (max-width: 575.99px) {
+  .contactInfo address {
+    display: block; }
+    .contactInfo address p {
+      line-height: 1.4em; } }
+
+@media (max-width: 767.99px) {
+  h1 {
+    font-size: 24px;
+    font-weight: bold; }
+  .about p,
+  .contactInfo p {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 16px; }
+  .contactUs .bookIcon {
+    margin-right: 10px; }
+    .contactUs .bookIcon p {
+      font-size: 18px;
+      margin-right: -6px; }
+    .contactUs .bookIcon img {
+      width: 80px; }
+  .contactUs .contactDetails {
+    font-size: 18px; }
+    .contactUs .contactDetails .email {
+      font-size: 11px;
+      margin-top: 5px; }
+  .siteHeader .orangeShape {
+    bottom: 38px; }
+  .siteHeader .container .logo img {
+    width: 130px; }
+  footer:before {
+    bottom: -80px; }
+  footer:after {
+    top: -39px; }
+  .locationMap {
+    padding-bottom: 40px; }
+  main {
+    margin-top: 140px; }
+  .eventGallery {
+    margin-top: 100px; }
+    .eventGallery .sliderContent p {
+      font-size: 20px; }
+      .eventGallery .sliderContent p span {
+        font-size: 24px; }
+  .locationMap {
+    padding-top: 100px; } }
+
+@media (max-width: 992px) {
+  #owl-demo .item figure {
+    display: block;
+    width: 100%; } }
