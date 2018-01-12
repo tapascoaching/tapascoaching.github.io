@@ -9,12 +9,4 @@ $(document).ready(function() {
     lazyLoad : true,
     baseClass : "owl-carousel"
   });
-
-  setTimeout(() => {
-    $('.popup, .overlay').fadeIn(800)
-  }, 2000)
-
-  $('.popup').on('click', () => {
-    $('.popup, .overlay').fadeOut()
-  })
 });
